@@ -1,3 +1,0 @@
----
-title: Percorsi tematici
----
