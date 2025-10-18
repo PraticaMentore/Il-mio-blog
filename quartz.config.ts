@@ -15,7 +15,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "it-IT",
-    baseUrl: "praticamentore.github.io/Il-mio-blog",  // RIMODIFICATO: era praticamentore.it
+    baseUrl: "praticamentore.it",  // RIMODIFICATO: era praticamentore.github.io/Il-mio-blog
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
