@@ -1,6 +1,5 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-
 /**
  * Quartz 4 Configuration
  *
@@ -16,7 +15,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "it-IT",
-    baseUrl: "praticamentore.github.io/Il-mio-blog",
+    baseUrl: "praticamentore.it",  // MODIFICATO: era praticamentore.github.io/Il-mio-blog
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
@@ -86,6 +85,7 @@ const config: QuartzConfig = {
       }),
       Plugin.Assets(),
       Plugin.Static(),
+      Plugin.CNAME(),  // AGGIUNTO: questo genera il file CNAME per il custom domain
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
@@ -93,5 +93,4 @@ const config: QuartzConfig = {
     ],
   },
 }
-
 export default config
