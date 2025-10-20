@@ -7,7 +7,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Il-mio-blog",
+    pageTitle: "PraticaMentore",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
